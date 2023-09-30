@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/codeclauseinternship_complete-survey-system/static/css/main.a9374ff1.css",
-    "main.js": "/codeclauseinternship_complete-survey-system/static/js/main.7a0cf84a.js",
+    "main.js": "/codeclauseinternship_complete-survey-system/static/js/main.d9f74b7b.js",
     "index.html": "/codeclauseinternship_complete-survey-system/index.html",
     "main.a9374ff1.css.map": "/codeclauseinternship_complete-survey-system/static/css/main.a9374ff1.css.map",
-    "main.7a0cf84a.js.map": "/codeclauseinternship_complete-survey-system/static/js/main.7a0cf84a.js.map"
+    "main.d9f74b7b.js.map": "/codeclauseinternship_complete-survey-system/static/js/main.d9f74b7b.js.map"
   },
   "entrypoints": [
     "static/css/main.a9374ff1.css",
-    "static/js/main.7a0cf84a.js"
+    "static/js/main.d9f74b7b.js"
   ]
 }
