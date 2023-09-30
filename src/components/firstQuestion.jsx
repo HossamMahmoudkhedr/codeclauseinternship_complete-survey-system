@@ -7,11 +7,11 @@ const FirstQuestion = ({ userData, setUserData, setCurrentFrom }) => {
 	const [chosen, setChosen] = useState();
 	const choises = ['Always', 'From time to time', 'Rarely', 'Never'];
 	useEffect(() => {
-		if (choises.indexOf(userData.usingTimes) != -1) {
+		if (choises.indexOf(userData.usingTimes) !== -1) {
 			setChosen(choises.indexOf(userData.usingTimes));
 			setIsFilled(true);
 		}
-	}, []);
+	}, [choises]);
 	const handleClick = (idx) => {
 		let name = 'usingTimes';
 		let value = choises[idx];

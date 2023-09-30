@@ -7,11 +7,11 @@ const SecondQuestion = ({ userData, setUserData, setCurrentFrom }) => {
 	const [chosen, setChosen] = useState();
 	const choises = ['Excellent', 'Very good', 'Good', 'Poor'];
 	useEffect(() => {
-		if (choises.indexOf(userData.quality) != -1) {
+		if (choises.indexOf(userData.quality) !== -1) {
 			setChosen(choises.indexOf(userData.quality));
 			setIsFilled(true);
 		}
-	}, []);
+	}, [choises]);
 	const handleClick = (idx) => {
 		let name = 'quality';
 		let value = choises[idx];

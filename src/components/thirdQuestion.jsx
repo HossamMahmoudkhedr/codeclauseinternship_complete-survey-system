@@ -14,11 +14,11 @@ const ThirdQuestion = ({ userData, setUserData, setCurrentFrom }) => {
 		'Not satisfied at all',
 	];
 	useEffect(() => {
-		if (choises.indexOf(userData.satisfaction) != -1) {
+		if (choises.indexOf(userData.satisfaction) !== -1) {
 			setChosen(choises.indexOf(userData.satisfaction));
 			setIsFilled(true);
 		}
-	}, []);
+	}, [choises]);
 	const handleClick = (idx) => {
 		let name = 'satisfaction';
 		let value = choises[idx];

@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import React from 'react';
-import { Button } from 'react-bootstrap';
 
 const CustomizedButton = ({ text, classes, type, restprops }) => {
 	return (

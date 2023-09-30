@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Alert, Form } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 import styled from 'styled-components';
 import UserInfo from './userInfo';
 import FirstQuestion from './firstQuestion';

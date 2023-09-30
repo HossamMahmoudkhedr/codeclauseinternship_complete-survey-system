@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import CustomizedButton from '../utils/customizedButton';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -10,12 +10,14 @@ const FourthQuestion = ({ userData, setUserData, setCurrentFrom }) => {
 		let name = 'featuresSuggestion';
 		let value = e.target.value;
 		setUserData((prev) => ({ ...prev, [name]: value }));
-		if (value !== '') {
+	};
+	useEffect(() => {
+		if (userData.featuresSuggestion !== '') {
 			setIsFilled(true);
 		} else {
 			setIsFilled(false);
 		}
-	};
+	}, []);
 
 	return (
 		<motion.div
