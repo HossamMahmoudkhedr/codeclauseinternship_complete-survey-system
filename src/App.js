@@ -12,7 +12,7 @@ import Error from './pages/error';
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route
-			path="codeclauseinternship_complete-survey-system/"
+			path="/"
 			element={<Root />}>
 			<Route
 				index
