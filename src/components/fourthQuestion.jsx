@@ -12,12 +12,16 @@ const FourthQuestion = ({ userData, setUserData, setCurrentFrom }) => {
 		setUserData((prev) => ({ ...prev, [name]: value }));
 	};
 	useEffect(() => {
-		if (userData.featuresSuggestion !== '') {
-			setIsFilled(true);
+		if (userData.featuresSuggestion) {
+			if (userData.featuresSuggestion !== '') {
+				setIsFilled(true);
+			} else {
+				setIsFilled(false);
+			}
 		} else {
 			setIsFilled(false);
 		}
-	}, []);
+	}, [userData.featuresSuggestion]);
 
 	return (
 		<motion.div
