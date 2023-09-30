@@ -12,10 +12,10 @@ import Error from './pages/error';
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route
-			index
+			path="/"
 			element={<Root />}>
 			<Route
-				path="/"
+				index
 				element={<SurveyForm />}
 			/>
 			<Route
