@@ -6,7 +6,6 @@ body {
 		rgba(159, 18, 168, 1) 0%,
 		rgba(206, 60, 121, 1) 100%
 	);
-	overflow: hidden;
 }
 
 .half-width {
