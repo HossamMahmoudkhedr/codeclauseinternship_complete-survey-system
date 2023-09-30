@@ -12,7 +12,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { motion } from 'framer-motion';
 const StyledFormContainer = styled.div`
-	margin-top: 4rem;
+	margin: 4rem 0;
 `;
 
 const StyledSeparator = styled.div`
